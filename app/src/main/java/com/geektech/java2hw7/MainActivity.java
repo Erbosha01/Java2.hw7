@@ -9,8 +9,8 @@ import android.widget.TextView;
 public class MainActivity extends AppCompatActivity {
 
     private TextView txtChange;
-    private Integer first;
-    private Integer second;
+    private Double first;
+    private Double second;
     private Boolean isOperationClick;
     private String operation;
 
@@ -25,8 +25,8 @@ public class MainActivity extends AppCompatActivity {
         switch (view.getId()) {
             case R.id.btn_clear:
                 txtChange.setText("0");
-                first = 0;
-                second = 0;
+                first = 0.0;
+                second = 0.0;
                 break;
             case R.id.btn_one:
                 setNumber("1");
@@ -57,6 +57,10 @@ public class MainActivity extends AppCompatActivity {
                 break;
             case R.id.btn_zero:
                 setNumber("0");
+                break;
+            case R.id.btn_tochka:
+                setNumber(".");
+                break;
         }
     }
 
@@ -74,31 +78,45 @@ public class MainActivity extends AppCompatActivity {
     public void OnActionClick(View view) {
         switch (view.getId()) {
             case R.id.btn_plus:
-                first = Integer.parseInt(txtChange.getText().toString());
+                first = Double.parseDouble(txtChange.getText().toString());
                 isOperationClick = true;
                 operation = "+";
                 break;
             case R.id.btn_minus:
-                first = Integer.parseInt(txtChange.getText().toString());
+                first = Double.parseDouble(txtChange.getText().toString());
                 isOperationClick = true;
                 operation = "-";
                 break;
             case R.id.btn_multiplied:
-                first = Integer.parseInt(txtChange.getText().toString());
+                first = Double.parseDouble(txtChange.getText().toString());
                 isOperationClick = true;
                 operation = "*";
+                 break;
             case R.id.btn_divided:
-                first = Integer.parseInt(txtChange.getText().toString());
+                first = Double.parseDouble(txtChange.getText().toString());
                 isOperationClick = true;
                 operation = "/";
+                break;
+            case R.id.btn_procent:
+                first = Double.parseDouble(txtChange.getText().toString());
+                Double procent;
+                procent = first / 100;
+                txtChange.setText(procent.toString());
+                break;
+            case R.id.btn_mp:
+                first = Double.parseDouble(txtChange.getText().toString());
+                Double mp;
+                mp = first - first * 2;
+                txtChange.setText(mp.toString());
+                break;
+
             case R.id.btn_ravno:
-                second = Integer.parseInt(txtChange.getText().toString());
-                Integer result = 0;
+                second = Double.parseDouble(txtChange.getText().toString());
+                Double result = 0.0;
                 switch (operation) {
                     case "+":
                         result = first + second;
                         break;
-
                     case "-":
                         result = first - second;
                         break;
