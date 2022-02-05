@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_white"
+    tools:context=".SecondActivity">
+    <include layout="@layout/toolbar"/>
+    <TextView
+        android:id="@+id/txt_top"
+        android:layout_marginBottom="25dp"
+        app:layout_constraintBottom_toTopOf="@id/linear2"
+        app:layout_constraintStart_toStartOf="@+id/linear2"
+        app:layout_constraintEnd_toEndOf="@+id/linear2"
+        android:textColor="@color/blue"
+        android:textStyle="bold"
+        android:textSize="32sp"
+        android:text="Policies"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:id="@+id/linear2"
+        android:layout_marginBottom="35dp"
+        app:layout_constraintEnd_toEndOf="@id/txt_bottom"
+        app:layout_constraintStart_toStartOf="@id/txt_bottom"
+        app:layout_constraintBottom_toTopOf="@id/txt_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <com.google.android.material.button.MaterialButton
+            android:paddingHorizontal="20dp"
+            android:textAllCaps="false"
+            android:paddingVertical="15dp"
+            android:drawableTint="@color/black"
+            android:drawableEnd="@drawable/ic_right"
+            android:textSize="20dp"
+            android:textAlignment="textStart"
+            android:textColor="@color/blue"
+            android:text="Policy"
+            app:cornerRadius="50dp"
+            android:layout_marginHorizontal="16dp"
+            app:strokeColor="@color/gray"
+            app:strokeWidth="1dp"
+            android:backgroundTint="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:paddingHorizontal="20dp"
+            android:textAllCaps="false"
+            android:paddingVertical="15dp"
+            android:drawableTint="@color/black"
+            android:drawableEnd="@drawable/ic_right"
+            android:textSize="20dp"
+            android:textAlignment="textStart"
+            android:textColor="@color/blue"
+            android:text="Prodact Catygory"
+            app:cornerRadius="50dp"
+            android:layout_marginHorizontal="16dp"
+            app:strokeColor="@color/gray"
+            app:strokeWidth="1dp"
+            android:backgroundTint="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:paddingHorizontal="20dp"
+            android:paddingVertical="15dp"
+            android:textAllCaps="false"
+            android:drawableTint="@color/black"
+            android:drawableEnd="@drawable/ic_right"
+            android:textSize="20dp"
+            android:textAlignment="textStart"
+            android:textColor="@color/blue"
+            android:text="Origin Country"
+            app:cornerRadius="50dp"
+            android:layout_marginHorizontal="16dp"
+            app:strokeColor="@color/gray"
+            app:strokeWidth="1dp"
+            android:backgroundTint="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:paddingHorizontal="15dp"
+            android:paddingVertical="20dp"
+            android:textAllCaps="false"
+            android:drawableTint="@color/black"
+            android:drawableEnd="@drawable/ic_right"
+            android:textSize="20dp"
+            android:textAlignment="textStart"
+            android:textColor="@color/blue"
+            android:text="Brand"
+            app:cornerRadius="50dp"
+            android:layout_marginHorizontal="16dp"
+            app:strokeColor="@color/gray"
+            app:strokeWidth="1dp"
+            android:backgroundTint="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/txt_bottom"
+        android:layout_marginBottom="25dp"
+        app:layout_constraintEnd_toEndOf="@id/btn_finish"
+        app:layout_constraintStart_toStartOf="@id/btn_finish"
+        app:layout_constraintBottom_toTopOf="@id/btn_finish"
+        android:textColor="@color/blue"
+        android:textStyle="bold"
+        android:textSize="32sp"
+        android:text="Current Policies"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_finish"
+        android:textAllCaps="false"
+        android:layout_marginBottom="71dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:cornerRadius="50dp"
+        android:textStyle="bold"
+        android:layout_marginHorizontal="90dp"
+        android:paddingVertical="20dp"
+        android:textSize="15sp"
+        android:text="Export as CSV"
+        android:backgroundTint="@color/pink"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
