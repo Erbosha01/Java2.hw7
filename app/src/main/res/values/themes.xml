@@ -14,12 +14,13 @@
         <!-- Customize your theme here. -->
     </style>
     <style name="Theme.SecondActivity" parent="Theme.MaterialComponents.DayNight.NoActionBar.Bridge">
-        <item name="android:statusBarColor">@color/blue</item>
+        <item name="android:statusBarColor">@color/blue_dark</item>
         <!-- Customize your theme here. -->
     </style>
-    <style name="Theme.Splashscreen" parent="Theme.MaterialComponents.DayNight.NoActionBar.Bridge">
+    <style name="Theme.Splash" parent="Theme.MaterialComponents.DayNight.NoActionBar.Bridge">
         <item name="android:statusBarColor">@color/white</item>
-        <item name="background">@drawable/bg_splash_screen</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="android:background">@drawable/bg_splash_screen</item>
         <!-- Customize your theme here. -->
     </style>
 </resources>

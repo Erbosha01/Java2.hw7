@@ -3,6 +3,11 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/Java2.hw7/app/src/main/res/drawable/bg_splash_screen.xml" value="0.22552083333333334" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/Java2.hw7/app/src/main/res/drawable/ic_lanes.xml" value="0.22552083333333334" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/Java2.hw7/app/src/main/res/layout/activity_second.xml" value="0.2" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/Java2.hw7/app/src/main/res/layout/toolbar.xml" value="0.12771739130434784" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/Java2.hw7/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.11614583333333334" />
         <entry key="..\:/Users/Admin/AndroidStudioProjects/Java2hw7/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.22552083333333334" />
         <entry key="..\:/Users/Admin/AndroidStudioProjects/Java2hw7/app/src/main/res/drawable/bg_button.xml" value="0.22552083333333334" />
         <entry key="..\:/Users/Admin/AndroidStudioProjects/Java2hw7/app/src/main/res/drawable/bg_splash_screen.xml" value="0.22552083333333334" />

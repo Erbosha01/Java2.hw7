@@ -10,8 +10,8 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Java2hw7">
         <activity
-            android:theme="@style/Theme.Splashscreen"
             android:name=".SplashScreen"
+            android:theme="@style/Theme.Splash"
             android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

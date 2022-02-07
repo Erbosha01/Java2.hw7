@@ -24,17 +24,17 @@ public class MainActivity extends AppCompatActivity {
         txtChange = findViewById(R.id.txt_change);
         ravno = findViewById(R.id.btn_ravno);
         click = findViewById(R.id.btn_other);
-        ravno.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                click.setVisibility(View.VISIBLE);
-            }
-        });
+
+
+
         click.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity.this, SecondActivity.class);
+                String number = txtChange.getText().toString();
+                intent.putExtra("key1", number);
                 startActivity(intent);
+                finish();
             }
         });
     }
@@ -146,7 +146,6 @@ public class MainActivity extends AppCompatActivity {
                 break;
 
             case R.id.btn_ravno:
-                click.setVisibility(View.GONE);
                 second = Double.parseDouble(txtChange.getText().toString());
                 Double result = 0.0;
                 switch (operation) {
@@ -163,7 +162,12 @@ public class MainActivity extends AppCompatActivity {
                         result = first / second;
                         break;
                 }
-                txtChange.setText(result.toString());
+                if (txtChange.getText().toString() == "0") {
+                    txtChange.setText("0");
+                }else {
+                    txtChange.setText(result.toString());
+                }
+                click.setVisibility(View.VISIBLE);
                 break;
 
         }
